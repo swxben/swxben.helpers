@@ -3,6 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "swxben.helpers", "src\swxben.helpers\swxben.helpers.csproj", "{96A41C26-FDDD-4CBA-8380-160E53307B99}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "swxben.helpers.tests", "src\swxben.helpers.tests\swxben.helpers.tests.csproj", "{9FBB79F3-92AD-48C4-92D0-0C025E84B361}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{0615ED14-B428-4BDA-AC0D-326F7AB8D6ED}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +20,10 @@ Global
 		{96A41C26-FDDD-4CBA-8380-160E53307B99}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96A41C26-FDDD-4CBA-8380-160E53307B99}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96A41C26-FDDD-4CBA-8380-160E53307B99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FBB79F3-92AD-48C4-92D0-0C025E84B361}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FBB79F3-92AD-48C4-92D0-0C025E84B361}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FBB79F3-92AD-48C4-92D0-0C025E84B361}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FBB79F3-92AD-48C4-92D0-0C025E84B361}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

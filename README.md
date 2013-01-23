@@ -14,6 +14,15 @@ Install via [NuGet](http://nuget.org/packages/swxben.helpers), either in Visual 
 ### swxben.helpers.StringExtensions
 
 
+#### HashSHA256
+
+Hashes a string using SHA256. Null strings are treated as empty strings.
+
+	"password".HashSHA256() == "XohImNooBHFR0OVvjcYpJ3NgPQ1qq73WKhHvch0VQtg="
+	"".HashSHA256() == "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+	default(string).HashSHA256() == "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+
+
 #### Humanise / Humanize
 
 Takes an `underscore_separated` or `PascalCaseNotation` string and converts it to a generally human readable string, maintaining capitalisation with special exceptions for "a", "and", "as", "for", "to", "in" and "from".

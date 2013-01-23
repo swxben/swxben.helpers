@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{96A41C26-FDDD-4CBA-8380-160E53307B99}</ProjectGuid>
+    <ProjectGuid>{9FBB79F3-92AD-48C4-92D0-0C025E84B361}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>swxben.helpers</RootNamespace>
-    <AssemblyName>swxben.helpers</AssemblyName>
+    <RootNamespace>swxben.helpers.tests</RootNamespace>
+    <AssemblyName>swxben.helpers.tests</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -31,6 +31,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Shouldly">
+      <HintPath>..\..\packages\Shouldly.1.1.1.1\lib\35\Shouldly.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,16 +46,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DecimalExtensions\FormatCompactExtension.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StringExtensions\HashSHA256Extension.cs" />
-    <Compile Include="StringExtensions\HumaniseExtension.cs" />
-    <Compile Include="StringExtensions\HumanJoinExtension.cs" />
-    <Compile Include="StringExtensions\LeftExtension.cs" />
-    <Compile Include="StringExtensions\LinesExtension.cs" />
-    <Compile Include="StringExtensions\MakeFileNameSafeExtension.cs" />
-    <Compile Include="StringExtensions\ToSentenceCaseExtension.cs" />
+    <Compile Include="StringExtensionsTests\HashSHA256ExtensionTests.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\swxben.helpers\swxben.helpers.csproj">
+      <Project>{96A41C26-FDDD-4CBA-8380-160E53307B99}</Project>
+      <Name>swxben.helpers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
