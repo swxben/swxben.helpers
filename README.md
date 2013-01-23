@@ -14,6 +14,13 @@ Install via [NuGet](http://nuget.org/packages/swxben.helpers), either in Visual 
 ### swxben.helpers.StringExtensions
 
 
+#### EncodeEmailAddress
+
+Randomly encodes an email address using HTML entities, similar to how Markdown automatically encodes an email address. The `mailto:` prefix should be included.
+
+	"mailto:helloworld@swxben.com".EncodeEmailAddress() == "&#109;&#97;&#x69;l&#116;o&#x3a;&#x68;&#101;&#x6c;&#108;&#x6f;&#119;&#111;&#114;&#108;&#100;&#64;&#115;&#x77;&#x78;&#x62;&#x65;&#110;&#46;&#x63;&#x6f;&#109;"
+
+
 #### HashSHA256
 
 Hashes a string using SHA256. Null strings are treated as empty strings.
