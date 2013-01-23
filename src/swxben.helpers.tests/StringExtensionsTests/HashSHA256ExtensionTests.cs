@@ -22,7 +22,7 @@ namespace swxben.helpers.tests.StringExtensionsTests
         [Test]
         public void null_string_is_treated_as_empty_string()
         {
-            default(string).HashSHA256().ShouldBe("47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=");
+            HashSHA256Extension.HashSHA256(default(string)).ShouldBe("47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=");
         }
     }
 }

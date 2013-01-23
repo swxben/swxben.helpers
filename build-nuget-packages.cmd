@@ -12,5 +12,5 @@ call tests.bat
 
 echo Release build:
 msbuild.exe /ToolsVersion:4.0 "swxben.helpers.sln" /p:configuration=Release
-utilities\nuget.exe pack project.nuspec
+utilities\nuget.exe pack swxben.helpers.nuspec
 pause
