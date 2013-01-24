@@ -30,6 +30,14 @@ Hashes a string using SHA256. Null strings are treated as empty strings.
 	default(string).HashSHA256() == "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
 
 
+#### HtmlEncode / HtmlDecode
+
+Wraps `System.Net.HttpUtility`.
+
+    "one & two".HtmlEncode() == "one &amp; two"
+    "one &amp; two".HtmlDecode() == "one & two"
+
+
 #### Humanise / Humanize
 
 Takes an `underscore_separated` or `PascalCaseNotation` string and converts it to a generally human readable string, maintaining capitalisation with special exceptions for "a", "and", "as", "for", "to", "in" and "from".
