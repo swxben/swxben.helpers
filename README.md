@@ -11,6 +11,36 @@ Install via [NuGet](http://nuget.org/packages/swxben.helpers), either in Visual 
 ## Usage
 
 
+### swxben.helpers.DecimalExtensions
+
+
+#### FormatCompact
+
+Formats a decimal to at least the specified precision (default is 2 decimal places).
+
+    0.123456m.FormatCompact() == "0.123456"
+    0.123m.FormatCompact() == "0.123"
+    0.123m.FormatCompact(6) == "0.123000"
+    0.0m.FormatCompact(6) == "0.000000"
+    0.0m.FormatCompact(0) == "0"
+    0.1m.FormatCompact(0) == "0.1"
+    100.0m.FormatCompact() == "100.00"
+    100.0m.FormatCompact(0) == "100"
+
+
+### swxben.helpers.ObjectExtensions
+
+#### IsNullOrDefault
+
+Returns boolean `true` if the value of type `T` is null or equal to `default(T)`.
+
+    1.23m.IsNullOrDefault.ShouldBe(false);
+    new Foo().IsNullOrDefault().ShouldBe(false);
+    0.0m.IsNullOrDefault().ShouldBe(true);
+    default(int).IsNullOrDefault().ShouldBe(true);
+    Foo foo = null; foo.IsNullOrDefault().ShouldBe(true);
+
+
 ### swxben.helpers.StringExtensions
 
 
@@ -81,23 +111,6 @@ Takes an `underscore_separated` or `PascalCaseNotation` string and converts it t
 
     "one_two_three_four_and_five".SentenceCase() == "One Two Three Four And Five"
     "OneTwoThreeFourAndFive".SentenceCase() == "One Two Three Four And Five"
-
-
-### swxben.helpers.DecimalExtensions
-
-
-#### FormatCompact
-
-Formats a decimal to at least the specified precision (default is 2 decimal places).
-
-    0.123456m.FormatCompact() == "0.123456"
-    0.123m.FormatCompact() == "0.123"
-    0.123m.FormatCompact(6) == "0.123000"
-    0.0m.FormatCompact(6) == "0.000000"
-    0.0m.FormatCompact(0) == "0"
-    0.1m.FormatCompact(0) == "0.1"
-    100.0m.FormatCompact() == "100.00"
-    100.0m.FormatCompact(0) == "100"
 
 
 ## Contribute

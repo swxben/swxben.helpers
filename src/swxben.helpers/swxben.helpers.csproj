@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DecimalExtensions\FormatCompactExtension.cs" />
+    <Compile Include="ObjectExtensions\IsNullOrDefaultExtension.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StringExtensions\EncodeEmailAddressExtension.cs" />
     <Compile Include="StringExtensions\HashSHA256Extension.cs" />
