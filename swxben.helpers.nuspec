@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>swxben.helpers</id>
-    <version>1.1.0</version>
+    <version>1.2.0</version>
     <title>swxben.helpers</title>
     <authors>Software By Ben, Ben Scott</authors>
     <owners>Software by Ben, Ben Scott</owners>
@@ -11,7 +11,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>C#/.NET helpers - mostly extension methods</description>
     <summary>C#/.NET helpers - mostly extension methods</summary>
-    <releaseNotes>HtmlEncode/HtmlDecode</releaseNotes>
+    <releaseNotes>object.IsNullOrDefault()</releaseNotes>
     <tags></tags>
   </metadata>
   <files>
