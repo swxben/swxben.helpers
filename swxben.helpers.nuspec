@@ -2,16 +2,16 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>swxben.helpers</id>
-    <version>1.2.0</version>
+    <version>1.3.0</version>
     <title>swxben.helpers</title>
-    <authors>Software By Ben, Ben Scott</authors>
-    <owners>Software by Ben, Ben Scott</owners>
+    <authors>Software By Ben, Ben Scott, swxben, belfryimages</authors>
+    <owners>Software By Ben, Ben Scott, swxben, belfryimages</owners>
     <licenseUrl>http://creativecommons.org/licenses/by-sa/3.0/</licenseUrl>
     <projectUrl>https://github.com/swxben/swxben.helpers</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>C#/.NET helpers - mostly extension methods</description>
     <summary>C#/.NET helpers - mostly extension methods</summary>
-    <releaseNotes>object.IsNullOrDefault()</releaseNotes>
+    <releaseNotes>nl2br</releaseNotes>
     <tags></tags>
   </metadata>
   <files>
