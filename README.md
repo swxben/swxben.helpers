@@ -1,7 +1,7 @@
 swxben.helpers
 ==============
 
-C#/.NET helpers - mostly extension methods
+C#/.NET helpers - mostly extension methods. Some are based on Ruby methods, some are ripped from PHP's bad practices.
 
 
 ## Installation
@@ -16,7 +16,7 @@ Install via [NuGet](http://nuget.org/packages/swxben.helpers), either in Visual 
 
 #### FormatCompact
 
-Formats a decimal to at least the specified precision (default is 2 decimal places).
+Formats a decimal to _at least_ the specified precision - default is 2 decimal places. It doesn't limit or round to the specified precision. It will show the larger of (as much precision as required OR the specified precision).
 
     0.123456m.FormatCompact() == "0.123456"
     0.123m.FormatCompact() == "0.123"
@@ -103,6 +103,11 @@ Reads a string line by line via an `IEnumerable<string>` (using `StringReader(s)
 Removes invalid characters from a string to make it a valid file name (within reason).
 
     "invalid<>file\name.txt".MakeFileNameSafe() == "invalidfilename.txt"
+
+
+#### nl2br
+
+Like PHP's `nl2br()` core method. Replaces `Environment.NewLine` with `"<br/>"`.
 
 
 #### SentenceCase / ToSentenceCase
