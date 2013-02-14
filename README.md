@@ -11,6 +11,55 @@ Install via [NuGet](http://nuget.org/packages/swxben.helpers), either in Visual 
 ## Usage
 
 
+### swxben.helpers.Cli
+
+#### CommandLineOptions
+
+Helps parse simple command line options of the form `--OptionName`, optionally `--OptionName=value`. Can either be used standalone or by subclassing to encapsulate a program's command line options. Option names are **case insensitive**, so `--OptionName` and `--optionname` are equivalent.
+
+    static void Main(string[] args)
+    {
+        var options = new CommandLineOptions(args);
+        var debug = options.CheckOption("debug");
+        var name = options.GetOptionValue("name");
+    }
+    // could be called like: foo.exe --debug --name="I am Foo"
+
+    // or via subclassing:
+    class FooOptions : CommandLineOptions
+    {
+        public bool Debug{ get { return CheckOption("debug"); }
+        public string Name { get { return GetOptionValue("name"); }
+
+        public FooOptions(string[] args) : base(args) {}
+    }
+    static void Main(string[] args)
+    {
+        var options = new FooOptions(args);
+        var debug = options.Debug;
+        var name = options.Name;
+    }
+
+`GetOptionValue()` returns null if the value is not provided, so for example a configuration could be selected on the command line using the following:
+
+    class FooOptions : CommandLineOptions
+    {
+        public IConfiguration Configuration { get; private set; }
+        public FooOptions(string[] args) : base(args)
+        {
+            Configuration= = (GetOptionValue("configuration") ?? "live") == live ?
+                (IConfiguration)new LiveConfiguration() :
+                (IConfiguration)new DevelopmentConfiguration();
+        }
+    }
+    // ""foo.exe --configuration=live" or "foo.exe" with no arguments runs with the live configuration,
+    // while "foo --configuration=bar" defaults to the development configuration
+
+Double and single quotes are also stripped from the start and end of the argument value:
+
+    new CommandLineOptions(new[] { "--foo=\"test\""}).GetOptionValue("foo") == "test"
+
+
 ### swxben.helpers.DecimalExtensions
 
 
