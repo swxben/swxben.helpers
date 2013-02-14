@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>swxben.helpers</id>
-    <version>1.3.1</version>
+    <version>1.4.0</version>
     <title>swxben.helpers</title>
     <authors>Software By Ben, Ben Scott, swxben, belfryimages</authors>
     <owners>Software By Ben, Ben Scott, swxben, belfryimages</owners>
@@ -11,7 +11,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>C#/.NET helpers - mostly extension methods</description>
     <summary>C#/.NET helpers - mostly extension methods</summary>
-    <releaseNotes>Fix nl2br()</releaseNotes>
+    <releaseNotes>CommandLineOptions</releaseNotes>
     <tags></tags>
   </metadata>
   <files>
