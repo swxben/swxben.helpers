@@ -54,6 +54,7 @@
     <Compile Include="StringExtensions\LinesExtension.cs" />
     <Compile Include="StringExtensions\MakeFileNameSafeExtension.cs" />
     <Compile Include="StringExtensions\nl2brExtension.cs" />
+    <Compile Include="StringExtensions\SafeReplaceExtension.cs" />
     <Compile Include="StringExtensions\ToSentenceCaseExtension.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
