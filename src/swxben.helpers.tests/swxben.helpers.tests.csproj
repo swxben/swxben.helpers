@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CliTests\CommandLineOptions_tests.cs" />
     <Compile Include="ObjectExtensionTests\is_null_or_default_extension_tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StringExtensionsTests\HashSHA256ExtensionTests.cs" />
