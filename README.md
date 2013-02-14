@@ -159,6 +159,11 @@ Removes invalid characters from a string to make it a valid file name (within re
 Like PHP's `nl2br()` core method. Replaces `Environment.NewLine` with `"<br/>"`.
 
 
+#### SafeReplace
+
+Used like `String.Replace()` but safe on null strings - just returns null.
+
+
 #### SentenceCase / ToSentenceCase
 
 Takes an `underscore_separated` or `PascalCaseNotation` string and converts it to `A Quite Naive Sentence Cased String`.
