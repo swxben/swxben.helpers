@@ -55,6 +55,10 @@ Helps parse simple command line options of the form `--OptionName`, optionally `
     // ""foo.exe --configuration=live" or "foo.exe" with no arguments runs with the live configuration,
     // while "foo --configuration=bar" defaults to the development configuration
 
+Double and single quotes are also stripped from the start and end of the argument value:
+
+    new CommandLineOptions(new[] { "--foo=\"test\""}).GetOptionValue("foo") == "test"
+
 
 ### swxben.helpers.DecimalExtensions
 
