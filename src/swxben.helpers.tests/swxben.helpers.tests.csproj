@@ -53,6 +53,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StringExtensionsTests\HashSHA256ExtensionTests.cs" />
     <Compile Include="StringExtensionsTests\HtmlEncodeExtensionTests.cs" />
+    <Compile Include="StringExtensionsTests\SafeReplaceExtensionTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\swxben.helpers\swxben.helpers.csproj">
