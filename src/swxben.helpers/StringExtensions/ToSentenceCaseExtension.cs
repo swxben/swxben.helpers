@@ -11,7 +11,7 @@ namespace swxben.helpers.StringExtensions
             var sb = new StringBuilder();
 
             sb.Append(s.Substring(0, 1).ToUpper());
-            if (s.Length > 1) sb.Append(s.Substring(1, s.Length - 1));
+            if (s.Length > 1) sb.Append(s.Substring(1, s.Length - 1).Humanise().ToLower());
 
             return sb.ToString();
         }

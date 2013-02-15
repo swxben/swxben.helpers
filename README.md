@@ -166,10 +166,10 @@ Used like `String.Replace()` but safe on null strings - just returns null.
 
 #### SentenceCase / ToSentenceCase
 
-Takes an `underscore_separated` or `PascalCaseNotation` string and converts it to `A Quite Naive Sentence Cased String`.
+Takes an `underscore_separated` or `PascalCaseNotation` string and converts it to `A quite naive sentence cased string`.
 
-    "one_two_three_four_and_five".SentenceCase() == "One Two Three Four And Five"
-    "OneTwoThreeFourAndFive".SentenceCase() == "One Two Three Four And Five"
+    "one_two_three_four_and_five".SentenceCase() == "One two three four and five"
+    "OneTwoThreeFourAndFive".SentenceCase() == "One two three four and five"
 
 
 ## Contribute
